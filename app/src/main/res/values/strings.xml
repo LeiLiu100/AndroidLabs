@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab2</string>
-    <string name="widgets">Here are my widgets:</string>
-    <string name="Button">Button</string>
-    <string name="contentDescription">flag</string>
-    <string name="checkout_message">Check this out</string>
-    <string name="switch_message">Switch on / off</string>
-    <string name="hint_message">Type your answer here</string>
+    <string name="app_name">Lab3</string>
+    <string name="email_message">Enter your email address:</string>
+    <string name="type_email">Type email here</string>
+    <string name="password_message">Type your password:</string>
+    <string name="button_login">LOGIN</string>
+    <string name="profile_message">Your profile</string>
+    <string name="name_message">Your name</string>
+    <string name="name_input">Enter your name</string>
+    <string name="pic_message">Your picture:</string>
+    <string name="click_hint">Click the button above to take a picture</string>
+
 </resources>
