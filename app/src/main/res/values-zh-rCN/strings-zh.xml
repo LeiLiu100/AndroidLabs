@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">实验3</string>
+    <string name="email_message">输入你的邮箱：</string>
+    <string name="type_email">在这输入邮箱</string>
+    <string name="password_message">输入密码</string>
+    <string name="button_login">登陆</string>
+    <string name="profile_message">你的文件夹</string>
+    <string name="name_message">你的名字</string>
+    <string name="name_input">输入名字</string>
+    <string name="pic_message">你的照片:</string>
+    <string name="click_hint">点击拍照</string>
+    <string name="chat_message">前往聊天区</string>
+    <string name="receiving_message">接受</string>
+    <string name="sending_message">发送</string>
+    <string name="type_msg">这个输入</string>
+</resources>
