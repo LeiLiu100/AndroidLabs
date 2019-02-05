@@ -1,4 +1,6 @@
 package com.example.myapplication;
+
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,18 +11,21 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    SharedPreferences sharedPreferences;
+    SharedPreferences sharedPre;
     EditText userEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {//read
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lab3);
+        //setContentView(R.layout.activity_main_linear);
+        //setContentView(R.layout.activity_main_grid);
+        //setContentView(R.layout.activity_main_relative);
+        setContentView(R.layout.activity_main_lab3);
 
         //this.getDelegate().
         userEmail = (EditText) findViewById(R.id.email_Text);
-        sharedPreferences = getSharedPreferences("FileUserName", Context.MODE_PRIVATE);
-        String savedString = sharedPreferences.getString("UserEmail", "Dv ");
+        sharedPre = getSharedPreferences("FileUserName", Context.MODE_PRIVATE);
+        String savedString = sharedPre.getString("UserEmail", "");
         userEmail.setText(savedString);
 
         Button loginButton = (Button)findViewById(R.id.loginButton);
@@ -35,12 +40,13 @@ public class MainActivity extends AppCompatActivity {
             startActivityForResult( profilePage, 345);
         });
     }
+
     @Override
     protected void onPause() {// save
         super.onPause();
         //get an editor object
-        //sharedPre = getSharedPreferences("UserFile", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        //sharedPre = getSharedPreferences("FileUserName", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPre.edit();
         //save what was typed under the name "ReserveName"
         String userTypedEmail = userEmail.getText().toString();
         editor.putString("UserEmail", userTypedEmail);
@@ -58,25 +64,29 @@ public class MainActivity extends AppCompatActivity {
             // resultCode will only be 60 if the user clicks on the back button on page 3 (ThirdActivity.java line 39)
             if(resultCode == 60)
             {
-                EditText et = findViewById(R.id.email_Text);
+                EditText et = (EditText)findViewById(R.id.email_Text);
                 String fromPageThree = data.getStringExtra("NextPageTyped");
                 et.setText(fromPageThree);
                 Log.i("Back", "Message");
             }
         }
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
     }
+
     @Override
     protected void onStop() {
         super.onStop();
     }
+
     @Override
     protected void onResume() {
         super.onResume();
     }
+
     @Override
     protected void onStart() {
         super.onStart();

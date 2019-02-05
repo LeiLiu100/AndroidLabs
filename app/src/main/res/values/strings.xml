@@ -9,5 +9,10 @@
     <string name="name_input">Enter your name</string>
     <string name="pic_message">Your picture:</string>
     <string name="click_hint">Click the button above to take a picture</string>
+    <string name="chat_message">Go to chat</string>
+    <string name="receiving_message">RECEIVE</string>
+    <string name="sending_message">SENDING</string>
+    <string name="type_msg">type here</string>
+
 
 </resources>
