@@ -9,5 +9,11 @@
     <string name="name_input">Enter your name</string>
     <string name="pic_message">Your picture:</string>
     <string name="click_hint">Click the button above to take a picture</string>
+    <string name="prompt_email">email </string>
+    <string name="prompt_password">password</string>
+    <string name="your_pro">prompt</string>
+    <string name="your_name_text">name</string>
+    <string name="your_name">name</string>
+    <string name="your_pic">picture</string>
 
 </resources>

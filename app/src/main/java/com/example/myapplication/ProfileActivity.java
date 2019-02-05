@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.graphics.Bitmap;
 import android.widget.EditText;
@@ -18,7 +19,7 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lab4);
+        setContentView(R.layout.activity_main_profile);
 
         // get the intent that got us here
         //Intent fromPrevious = getIntent();
@@ -30,21 +31,14 @@ public class ProfileActivity extends AppCompatActivity {
         //enterText.setText(previousTyped);
 
         mImageButton = (ImageButton)findViewById(R.id.picButton);
-        mImageButton.setOnClickListener(new View.OnClickListener();
+        //mImageButton.setOnClickListener(new View.OnClickListener();
         mImageButton.setOnClickListener(v -> {
             Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
                 startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
             }
         });
-        Button chatBt = (Button) findViewById(R.id.buttonGotoChat);
-        chatBt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ProfileActivity.this, ChatRoomActivity.class);
-                startActivity(intent);
-            }
-        });
+
         Log.e(ACTIVITY_NAME, "In function:" + "onCreate");
     }
 

@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {//read
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lab3);
+        setContentView(R.layout.activity_main_lab3);
 
         //this.getDelegate().
         userEmail = (EditText) findViewById(R.id.email_Text);
