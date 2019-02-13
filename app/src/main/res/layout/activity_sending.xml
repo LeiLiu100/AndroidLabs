@@ -11,7 +11,7 @@
         app:srcCompat="@drawable/row_send"
         android:id="@+id/imageView"
         android:gravity="left"
-        />
+       />
 
     <TextView
         android:text="TextView"

@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Message;
-import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -35,7 +33,7 @@ public class ChatRoomActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lab4);
+        setContentView(R.layout.activity_chat_window);
 
         ListView listView = (ListView) findViewById(R.id.listView);
         chatEditText = (EditText) findViewById(R.id.editChat);
@@ -73,25 +71,25 @@ public class ChatRoomActivity extends AppCompatActivity {
             }
         });
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
-                Context context = view.getContext();
-
-                TextView textViewItem = ((TextView) view.findViewById(R.id.message_text));
-
-                // get the clicked item name
-                String listItemText = textViewItem.getText().toString();
-
-                // just toast it
-                Toast.makeText(context, "Item: " + listItemText , Toast.LENGTH_SHORT).show();
-
-                Log.d("chatListView", "onItemClick: " + i + " " + l);
-            }
-        });
-
-
-    }
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
+//                Context context = view.getContext();
+//
+//                TextView textViewItem = ((TextView) view.findViewById(R.id.message_text));
+//
+//                // get the clicked item name
+//                String listItemText = textViewItem.getText().toString();
+//
+//                // just toast it
+//                Toast.makeText(context, "Item: " + listItemText , Toast.LENGTH_SHORT).show();
+//
+//                Log.d("chatListView", "onItemClick: " + i + " " + l);
+//            }
+//        });
+//
+//
+  }
 
     @Override
     protected void onDestroy(){
