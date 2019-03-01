@@ -23,6 +23,12 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        // get the intent that got us here
+        Intent fromPrevious = getIntent();
+        String previousTyped = fromPrevious.getStringExtra("typed");
+        //Put the string that was sent from FirstActivity into the edit text:
+        EditText enterText = (EditText)findViewById(R.id.editText3);
+        enterText.setText(previousTyped);
 
         mImageButton = (ImageButton) findViewById(R.id.buttonTakePicture);
         mImageButton.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +51,7 @@ public class ProfileActivity extends AppCompatActivity {
         chatBt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ProfileActivity.this, ChatRoomActivity.class);
+                Intent intent = new Intent(ProfileActivity.this, ChatRoomActivitylab5.class);
                 startActivity(intent);
             }
         });

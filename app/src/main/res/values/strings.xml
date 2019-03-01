@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab4</string>
+    <string name="app_name">Lab5</string>
     <string name="widgets">Here are my widgets:</string>
     <string name="Button">Button</string>
     <string name="contentDescription">flag</string>
@@ -15,7 +15,7 @@
     <string name="name_message">Your name</string>
     <string name="name_input">Enter your name</string>
     <string name="pic_message">Your picture:</string>
-    <string name="click_hint">Click the button above to take a picture</string>
+    <string name="click_hint">Click the button to go to chat room</string>
     <string name="chat_message">Go to chat</string>
     <string name="receiving_message">RECEIVE</string>
     <string name="sending_message">SENDING</string>

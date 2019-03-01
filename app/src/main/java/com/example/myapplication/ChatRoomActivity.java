@@ -70,25 +70,6 @@ public class ChatRoomActivity extends AppCompatActivity {
 
             }
         });
-
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
-//                Context context = view.getContext();
-//
-//                TextView textViewItem = ((TextView) view.findViewById(R.id.message_text));
-//
-//                // get the clicked item name
-//                String listItemText = textViewItem.getText().toString();
-//
-//                // just toast it
-//                Toast.makeText(context, "Item: " + listItemText , Toast.LENGTH_SHORT).show();
-//
-//                Log.d("chatListView", "onItemClick: " + i + " " + l);
-//            }
-//        });
-//
-//
   }
 
     @Override

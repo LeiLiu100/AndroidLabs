@@ -15,7 +15,7 @@
     <string name="name_message">你的姓名</string>
     <string name="name_input">输入你的姓名</string>
     <string name="pic_message">你的照片</string>
-    <string name="click_hint">点击此按钮拍照</string>
+    <string name="click_hint">点击此按钮进入聊天区</string>
     <string name="chat_message">前往聊天区</string>
     <string name="receiving_message">接收</string>
     <string name="sending_message">发送</string>
