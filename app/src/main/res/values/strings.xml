@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab5</string>
+    <string name="app_name">Lab6</string>
     <string name="widgets">Here are my widgets:</string>
     <string name="Button">Button</string>
     <string name="contentDescription">flag</string>
@@ -20,6 +20,11 @@
     <string name="receiving_message">RECEIVE</string>
     <string name="sending_message">SENDING</string>
     <string name="type_msg">type here</string>
-
-
+    <string name="buttonGotoToolbar">Goto Toolbar page</string>
+    <string name="menuName1">Choice 1</string>
+    <string name="menuName2">Choice 2</string>
+    <string name="menuName3">Choice 3</string>
+    <string name="menuName4">About</string>
+    <string name="search">Search</string>
+    <string name="aButton">Go Back?</string>
 </resources>
