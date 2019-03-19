@@ -66,6 +66,16 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+        //Code for Lab 7
+        Button WFBt = (Button) findViewById(R.id.buttonGotoWeatherForecast);
+        WFBt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileActivity.this, WeatherForecastActivity.class);
+                startActivity(intent);
+            }
+        });
+
         Log.e(ACTIVITY_NAME, "In onCreate()");
 
            }

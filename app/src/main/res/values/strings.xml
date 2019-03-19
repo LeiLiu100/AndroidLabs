@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab6</string>
+    <string name="app_name">Lab7</string>
     <string name="widgets">Here are my widgets:</string>
     <string name="Button">Button</string>
     <string name="contentDescription">flag</string>
@@ -27,4 +27,5 @@
     <string name="menuName4">About</string>
     <string name="search">Search</string>
     <string name="aButton">Go Back?</string>
+    <string name="buttonGotoWeatherForecast">Goto WeatherForecast</string>
 </resources>
